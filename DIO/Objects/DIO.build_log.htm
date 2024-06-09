@@ -1,0 +1,153 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Youness Moufidy, NO, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  E:\keil_download\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\keil_projects\DIO\DIO.uvprojx
+Project File Date:  02/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'E:\keil_download\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+DIO_program.c(2): warning: In file included from...
+./DIO_interface.h(78): warning: no newline at end of file [-Wnewline-eof]
+   78 | #endif
+      |       ^
+DIO_program.c(3): warning: In file included from...
+./DIO_private.h(78): warning: no newline at end of file [-Wnewline-eof]
+   78 | #endif
+      |       ^
+DIO_program.c(5): warning: In file included from...
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8354): warning: 'SET_BIT' macro redefined [-Wmacro-redefined]
+ 8354 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |         ^
+./BIT_MATH.h(7): note: previous definition is here
+    7 | #define SET_BIT(Reg,Bit)                Reg|=(1<<Bit)
+      |         ^
+DIO_program.c(16): warning: result of comparison of unsigned expression >= 0 is always true [-Wtautological-unsigned-zero-compare]
+   16 |                         if((Copy_u8Pin<=7)&&((Copy_u8Pin>=0))){
+      |                                               ~~~~~~~~~~^ ~
+DIO_program.c(17): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   17 |                                 GPIOA_CRL&=~(0b1111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(18): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   18 |                                 GPIOA_CRL|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(21): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   21 |                                 GPIOA_CRH&=~(0b1111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(22): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   22 |                                 GPIOA_CRH|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(27): warning: result of comparison of unsigned expression >= 0 is always true [-Wtautological-unsigned-zero-compare]
+   27 |                         if((Copy_u8Pin<=7)&&((Copy_u8Pin>=0))){
+      |                                               ~~~~~~~~~~^ ~
+DIO_program.c(28): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   28 |                                 GPIOB_CRL&=~(0b1111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(29): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   29 |                                 GPIOB_CRL|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(32): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   32 |                                 GPIOB_CRH&=~(0b111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(33): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   33 |                                 GPIOB_CRH|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(37): warning: result of comparison of unsigned expression >= 0 is always true [-Wtautological-unsigned-zero-compare]
+   37 |                         if((Copy_u8Pin<=7)&&((Copy_u8Pin>=0))){
+      |                                               ~~~~~~~~~~^ ~
+DIO_program.c(38): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   38 |                                 GPIOC_CRL&=~(0b1111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(39): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   39 |                                 GPIOC_CRL|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(42): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   42 |                                 GPIOC_CRH&=~(0b1111U<<(Copy_u8Pin*4));
+      |                                              ^
+DIO_program.c(43): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   43 |                                 GPIOC_CRH|=(u8Copy_u8Mode<<(Copy_u8Pin*4));
+      |                                          ~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+DIO_program.c(53): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   53 |                         GPIOA_ODR|=(u8Copy_u8Value<<Copy_u8Pin);
+      |                                  ~~ ~~~~~~~~~~~~~~^~~~~~~~~~~~
+DIO_program.c(57): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   57 |                         GPIOB_ODR|=(u8Copy_u8Value<<Copy_u8Pin);
+      |                                  ~~ ~~~~~~~~~~~~~~^~~~~~~~~~~~
+DIO_program.c(61): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   61 |                         GPIOC_ODR|=(u8Copy_u8Value<<Copy_u8Pin);
+      |                                  ~~ ~~~~~~~~~~~~~~^~~~~~~~~~~~
+DIO_program.c(113): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+  113 |         MDIO_voidSetPinDirection  ( PC,13,0b0010);
+      |                                           ^
+DIO_program.c(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif
+      |       ^
+26 warnings generated.
+compiling DIO_program.c...
+linking...
+Program Size: Code=1416 RO-data=252 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\DIO.axf" - 0 Error(s), 26 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/pc/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/pc/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
